@@ -1,0 +1,175 @@
+$nav-black: #181e4b;
+$hero-h1: #181e4b;
+$h2: #14183e;
+$hero-red: #df6951;
+$main-gray: #5e6282;
+$white: #ffffff;
+$hero-bottom: #F1A501; 
+$hero-play: #686D77;
+$subscribe-bottom: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+$footer-title: #080809;
+$progress-color: #8a79df;
+$heart-color: #4152ca;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  &:hover{
+    cursor: pointer;
+  }
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 766px;
+  top: 0;
+  right: 0;
+  background-image: url('../images/stain-background.png');
+  background-size: 100% 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: 'Volkhov', serif;
+  font-size: 5.25rem;
+  font-weight: 700;
+  line-height: 89px;
+  letter-spacing: -0.04em;
+  color: $hero-h1;
+}
+
+.hero-nav {
+  display: flex;
+  flex: (center, space-between);
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  z-index: 100;
+  max-width: 1160px;
+  width: 100%;
+}
+
+.hero__nav__list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+}
+
+.hero__nav__item {
+  position: relative;
+  align-items: center;
+  gap: 60px;
+  color: $nav-black;
+}
+
+.hero__main {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 101;
+  div {
+    width: 50%;
+  }
+}
+
+.hero__main__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .hero__before_title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $hero-red;
+  }
+  .hero__subtitle {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: $main-gray;
+  }
+  div {
+    display: flex;
+    gap: 44px;
+    width: 100%;
+  }
+}
+.traveller-img {
+  width: 100%;
+  height: auto;
+}
+
+.drop-down {
+  display: none;
+}
+
+.hero__button {
+  font-family: 'Google Sans';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: $white;
+  background-color: $hero-red;
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  border-radius: 10px;
+  padding: 19px 27px;
+  border: none;
+} 
+
+.hero__button__demo {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: $hero-play;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: transparent;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "►";
+    border-radius: 50%;
+    background-color: $hero-red;
+    color: $white;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+}
